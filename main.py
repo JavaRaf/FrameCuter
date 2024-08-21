@@ -47,7 +47,7 @@ def generate_frames():
         # Comando ffmpeg
         command = [
             'ffmpeg', '-i', input_file, '-r', fps, '-q:v', quality, 
-            os.path.join(output_dir, 'frame_%04d.jpg')
+            os.path.join(output_dir, 'frame_%00d.jpg')
         ]
         
         # Configurar startupinfo para ocultar a janela de comando em Windows
